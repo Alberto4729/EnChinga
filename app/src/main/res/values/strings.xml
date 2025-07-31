@@ -4,4 +4,11 @@
     <string name="password_txt">Ingresa tu contraseña</string>
     <string name="sign_in">Iniciar sesión</string>
     <string name="sign_up">Registrate</string>
+    <string name="title_sing_up_txt">Registrate ahora!</string>
+    <string name="instruccions">Para registrarte en la app, ocupamos tus datos</string>
+    <string name="name">Write your name</string>
+    <string name="lasname">Write your lasname</string>
+    <string name="write_number_celphone">write your number the cel</string>
+    <string name="dummy_txt">Djklshdfgfpiqwesljkdhcg</string>
+    <string name="price_dummy">$56.00</string>
 </resources>

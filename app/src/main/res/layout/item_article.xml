@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginStart="16dp"
+        android:id="@+id/iv_personal"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/circle_rule"
+        android:scaleType="centerCrop"
+        android:src="@drawable/alberto"
+        android:clipToOutline="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/personal_data_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="16dp">
+
+        <TextView
+            android:id="@+id/personal_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="@string/dummy_txt"/>
+
+        <TextView
+            android:id="@+id/personal_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="@string/dummy_txt"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/article_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/price_dummy"
+        />
+
+</LinearLayout>
