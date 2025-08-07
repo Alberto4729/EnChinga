@@ -9,4 +9,5 @@
     <color name="accentColor">#D50000</color>
     <color name="subtitle_gray_color">#8A8A8A</color>
     <color name="bg_color_light">#FFFFFFFF</color>
+    <color name="primaryColorLight">#1AFF5722</color>
 </resources>

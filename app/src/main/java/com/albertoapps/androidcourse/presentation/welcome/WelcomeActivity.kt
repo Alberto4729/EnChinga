@@ -1,8 +1,11 @@
 package com.albertoapps.androidcourse.presentation.welcome
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.albertoapps.androidcourse.databinding.ActivityWelcomeBinding
+import com.albertoapps.androidcourse.presentation.login.LoginActivity
+import com.albertoapps.androidcourse.presentation.register.SignUpActivity
 
 class WelcomeActivity : AppCompatActivity() {
 
@@ -13,10 +16,19 @@ class WelcomeActivity : AppCompatActivity() {
 
         binding = ActivityWelcomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        setListeners()
     }
 
-
+    private fun setListeners() {
+        with(binding){
+            btnSignIn.setOnClickListener {
+                startActivity(Intent(this@WelcomeActivity, LoginActivity::class.java))
+            }
+            btnSignUp.setOnClickListener {
+                startActivity(Intent(this@WelcomeActivity, SignUpActivity::class.java))
+            }
+        }
+    }
 }
 
 

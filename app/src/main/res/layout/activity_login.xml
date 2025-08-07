@@ -9,7 +9,7 @@
     tools:context=".presentation.login.LoginActivity">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/welcome_toolbar"
+        android:id="@+id/login_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:minHeight="?attr/actionBarSize"
@@ -26,7 +26,7 @@
         android:layout_marginEnd="16dp"
         android:text="@string/welcome_back_title"
         style="@style/TitleTextStyle"
-        app:layout_constraintTop_toBottomOf="@+id/welcome_toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/login_toolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         />

@@ -8,6 +8,89 @@
     android:layout_height="match_parent"
     tools:context=".presentation.welcome.WelcomeActivity">
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/center_guide_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/welcome_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/welcome_image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:circularflow_angles="@drawable/pizza"
+        android:background="@drawable/circle"
+        android:src="@drawable/pizza"
+        android:scaleType="centerCrop"
+        android:elevation="@dimen/general_elevation"
+        android:clipToOutline="true"
+        android:contentDescription="@null"
+        android:layout_marginHorizontal="@dimen/general_margin"
+        app:layout_constraintBottom_toTopOf="@+id/center_guide_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/title_welcome"
+        style="@style/TitleTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/massage_welcome_txt"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/center_guide_line" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/subtitle_welcome"
+        style="@style/SubtitleTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/subtitle_welcome_2"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_welcome" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_sign_in"
+        style="@style/PrimaryButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/general_margin"
+        android:layout_marginBottom="@dimen/general_margin"
+        android:text="@string/sign_in_welcome"
+        app:layout_constraintBottom_toTopOf="@+id/btn_sign_up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_sign_up"
+        style="@style/SecondaryButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/general_margin"
+        android:layout_marginBottom="24dp"
+        android:text="@string/sign_up_welcome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

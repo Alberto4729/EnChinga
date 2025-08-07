@@ -31,4 +31,14 @@
     <string name="email_hint_txt">Ingresa tu correo electrónico</string>
     <string name="dont_have_account_txt">¿No tienes cuenta aún?</string>
     <string name="sign_up_here_txt">Regístrate aquí</string>
+    <string name="massage_welcome_txt">¡Tu comida favorita en un solo lugar!</string>
+    <string name="subtitle_welcome_2">Ordenala en cualquier lugar, en cualquier momento</string>
+    <string name="sign_in_welcome">Continuar</string>
+    <string name="sign_up_welcome">Registrate</string>
+    <string name="massage_sign_up_txt">Registrate 🗒️</string>
+    <string name="subtitle_sign_up">"Para registrarte necesitamos tus siguientes datos. "</string>
+    <string name="name_sign_up_txt">Nombre</string>
+    <string name="name_sign_up_">Ingresa tu nombre</string>
+    <string name="sign_up_txt">Registrate</string>
+    <string name="have_an_account">¿Ya tienes una cuenta?</string>
 </resources>
