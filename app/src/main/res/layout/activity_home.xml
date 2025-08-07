@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:layout_height="match_parent">
 
-    <Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/home_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,64 +13,117 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/personal_container"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/home_toolbar">
 
-        <ImageView
-            android:layout_marginStart="16dp"
-            android:id="@+id/iv_personal"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="@drawable/circle_rule"
-            android:scaleType="centerCrop"
-            android:src="@drawable/alberto"
-            android:clipToOutline="true"
-            />
-
-        <LinearLayout
-            android:id="@+id/personal_data_container"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/principal_container"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginHorizontal="16dp">
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pizza"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/burron_free"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/fre"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/img_p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/baseline_bookmark_border_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
 
             <TextView
-                android:id="@+id/personal_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                tools:text="@string/dummy_txt"/>
+                android:id="@+id/name_shope"
+                android:layout_width="54dp"
+                android:layout_height="20dp"
+                android:layout_marginHorizontal="@dimen/material_emphasis_disabled_background"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/name_shoptxt"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image" />
+
+            <ImageView
+                android:id="@+id/linearLayout"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/ic_star"
+                app:layout_constraintBottom_toBottomOf="@+id/name_shope"
+                app:layout_constraintStart_toEndOf="@+id/name_shope"
+                app:layout_constraintTop_toTopOf="@+id/name_shope" />
 
             <TextView
-                android:id="@+id/personal_last_name"
-                android:layout_width="match_parent"
+                android:id="@+id/calificacion_star"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:text="@string/dummy_txt"/>
+                android:layout_marginStart="4dp"
+                android:text="@string/num"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout"
+                app:layout_constraintTop_toTopOf="@+id/linearLayout" />
 
-        </LinearLayout>
+            <ImageView
+                android:id="@+id/accese_timer"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/acces_time"
+                app:layout_constraintBottom_toBottomOf="@+id/calificacion_star"
+                app:layout_constraintStart_toEndOf="@+id/calificacion_star"
+                app:layout_constraintTop_toTopOf="@+id/calificacion_star" />
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/timer_accese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hrs_accese"
+                android:textSize="11sp"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/accese_timer"
+                app:layout_constraintStart_toEndOf="@+id/accese_timer"
+                app:layout_constraintTop_toTopOf="@+id/accese_timer" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:itemCount="4"
-        tools:listitem="@layout/item_article"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/personal_container" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,7 @@ package com.albertoapps.androidcourse.presentation.home
 import android.os.Bundle
 import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
+import com.albertoapps.androidcourse.R
 import com.albertoapps.androidcourse.databinding.ActivityHomeBinding
 
 class HomeActivity: AppCompatActivity() {
@@ -14,4 +15,4 @@ class HomeActivity: AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
     }
-}
+    }

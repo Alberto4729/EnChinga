@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">EnChinga</string>
+    <string name="application_name">Delivery!</string>
     <string name="user_name_txt">Ingresa tu correo electrónico</string>
     <string name="password_txt">Ingresa tu contraseña</string>
     <string name="sign_in">Iniciar sesión</string>
@@ -11,4 +12,23 @@
     <string name="write_number_celphone">write your number the cel</string>
     <string name="dummy_txt">Djklshdfgfpiqwesljkdhcg</string>
     <string name="price_dummy">$56.00</string>
+    <string name="home_title_txt">Home view</string>
+    <string name="tv.profile" translatable="false">Norman Sanchez Nolasco</string>
+    <string name="Norman_Sanchez" translatable="false">pato\n\n</string>
+    <string name="cerrar_cesion">cerrar sesion</string>
+    <string name="fre">free</string>
+    <string name="name_shoptxt">Pizzetos</string>
+    <string name="num">4.5</string>
+    <string name="hrs_accese">7:00am-8:00pm</string>
+    <string name="welcome_title">Bienvenido 👋</string>
+    <string name="registrate_welcome">registrate</string>
+    <string name="user_name_input_txt">Email</string>
+    <string name="password_hint_txt">Ingresa tu contraseña</string>
+    <string name="email_txt">Email</string>
+    <string name="did_you_forgot_your_password_txt">¿Olvidaste tu contraseña?</string>
+    <string name="welcome_back_title">Bienvenido de nuevo 👋</string>
+    <string name="welcome_back_subtitle">Inicia sesión con tu cuenta</string>
+    <string name="email_hint_txt">Ingresa tu correo electrónico</string>
+    <string name="dont_have_account_txt">¿No tienes cuenta aún?</string>
+    <string name="sign_up_here_txt">Regístrate aquí</string>
 </resources>

@@ -1,6 +1,7 @@
 package com.albertoapps.androidcourse.presentation.register
 
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -17,5 +18,15 @@ class SignUpActivity : AppCompatActivity() {
 
         binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        configureView()
+    }
+
+    private fun configureView() {
+        with(binding) {
+            titleSingUp.text = getString(R.string.sign_up)
+            instructions.text = getString(R.string.instruccions)
+            buttonSignUpRegister.setText(getString(R.string.sign_up))
+        }
+
     }
 }
