@@ -41,4 +41,8 @@
     <string name="name_sign_up_">Ingresa tu nombre</string>
     <string name="sign_up_txt">Registrate</string>
     <string name="have_an_account">¿Ya tienes una cuenta?</string>
+    <string name="lastname_sign_up_">Ingreasa tu appellido paterno</string>
+    <string name="last_name_sign_up">Ingresa tu primer apellido</string>
+    <string name="number_cel_sign_up">Ingresa tu numero de celular</string>
+    <string name="direccioon_sign">Ingresa tu dirreción</string>
 </resources>
