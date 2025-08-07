@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.albertoapps.androidcourse.R
 import com.albertoapps.androidcourse.databinding.ActivityHomeBinding
 
-class HomeActivity: AppCompatActivity() {
+class HomeActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityHomeBinding
 
@@ -15,4 +15,4 @@ class HomeActivity: AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
     }
-    }
+}

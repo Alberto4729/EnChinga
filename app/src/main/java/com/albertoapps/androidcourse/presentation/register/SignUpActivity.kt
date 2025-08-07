@@ -18,15 +18,6 @@ class SignUpActivity : AppCompatActivity() {
 
         binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        configureView()
     }
 
-    private fun configureView() {
-        with(binding) {
-            titleSingUp.text = getString(R.string.sign_up)
-            instructions.text = getString(R.string.instruccions)
-            buttonSignUpRegister.setText(getString(R.string.sign_up))
-        }
-
-    }
 }
