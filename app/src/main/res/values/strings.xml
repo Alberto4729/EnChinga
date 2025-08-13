@@ -45,4 +45,6 @@
     <string name="last_name_sign_up">Ingresa tu primer apellido</string>
     <string name="number_cel_sign_up">Ingresa tu numero de celular</string>
     <string name="direccioon_sign">Ingresa tu dirreción</string>
+    <string name="continuar_congratulacion_txt">Continuar</string>
+    <string name="primary_button">continuar</string>
 </resources>

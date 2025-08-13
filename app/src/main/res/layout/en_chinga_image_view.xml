@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView android:id="@+id/en_chinga_image_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    app:circularflow_angles="@drawable/pizza"
+    android:background="@drawable/circle"
+    android:src="@drawable/pizza"
+    android:scaleType="centerCrop"
+    android:clipToOutline="true"
+    android:contentDescription="null"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" />
