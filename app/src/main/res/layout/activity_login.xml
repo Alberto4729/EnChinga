@@ -5,7 +5,6 @@
     android:id="@+id/toolbar_congrats"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_color_light"
     tools:context=".presentation.login.LoginActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -19,13 +18,13 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/welcome_back_title"
+        style="@style/TitleTextStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:text="@string/welcome_back_title"
-        style="@style/TitleTextStyle"
         app:layout_constraintTop_toBottomOf="@+id/login_toolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -147,6 +146,7 @@
             android:text="@string/dont_have_account_txt" />
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/sign_up_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/TextLinkStyle"

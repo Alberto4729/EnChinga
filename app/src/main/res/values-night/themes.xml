@@ -7,8 +7,8 @@
     <style name="Theme.AndroidCourse" parent="Base.Theme.AndroidCourse" />
 
     <style name="TitleTextStyle" parent="Theme.Material3.Dark.NoActionBar">
-    <item name="android:fontFamily">@font/sf_pro_display_semi_bold</item>
-    <item name="android:textColor">@color/white</item>
-    <item name="android:textSize">@dimen/title_size</item>
-</style>
+        <item name="android:fontFamily">@font/sf_pro_display_semi_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/title_size</item>
+    </style>
 </resources>

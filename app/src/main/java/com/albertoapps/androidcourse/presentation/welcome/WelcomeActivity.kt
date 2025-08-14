@@ -13,7 +13,6 @@ class WelcomeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = ActivityWelcomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setListeners()
@@ -22,7 +21,8 @@ class WelcomeActivity : AppCompatActivity() {
     private fun setListeners() {
         with(binding){
             btnSignIn.setOnClickListener {
-                startActivity(Intent(this@WelcomeActivity, LoginActivity::class.java))
+                val goToLoginScreen = Intent(this@WelcomeActivity, LoginActivity::class.java)
+                startActivity(goToLoginScreen)
             }
             btnSignUp.setOnClickListener {
                 startActivity(Intent(this@WelcomeActivity, SignUpActivity::class.java))
