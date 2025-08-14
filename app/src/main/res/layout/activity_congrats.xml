@@ -1,22 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/toolbar_congrats"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:paddingHorizontal="@dimen/general_margin"
-    android:visibility="visible"
-    tools:actionBarNavMode="standard"
-    tools:context=".presentation.congrats.CongratsActivity"
-    tools:visibility="visible">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <androidx.appcompat.widget.Toolbar
-        android:layout_height="match_parent"
+    <Toolbar
+        android:id="@+id/congrats_toolbar"
         android:layout_width="match_parent"
-        andr
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageView_congrats"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circle"
+        android:clipToOutline="true"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pizza"
+        app:circularflow_angles="@drawable/pizza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/congrats_toolbar" />
 
+    <TextView
+        android:id="@+id/title_congrats"
+        style="@style/TitleTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="@dimen/general_margin"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="@string/title_txt_congrats"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_congrats"
+        app:layout_constraintStart_toStartOf="@+id/imageView_congrats"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_congrats" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/txt_congrats"
+        style="@style/SubtitleTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="@string/txt_congrats"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_congrats"
+        app:layout_constraintStart_toStartOf="@+id/imageView_congrats"
+        app:layout_constraintTop_toBottomOf="@+id/title_congrats" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_sign_in_congrats"
+        style="@style/PrimaryButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/general_margin"
+        android:text="@string/continuar_congratulacion_txt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_congrats" />
+</androidx.constraintlayout.widget.ConstraintLayout>

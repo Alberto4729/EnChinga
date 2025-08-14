@@ -47,4 +47,6 @@
     <string name="direccioon_sign">Ingresa tu dirreción</string>
     <string name="continuar_congratulacion_txt">Continuar</string>
     <string name="primary_button">continuar</string>
+    <string name="txt_congrats">Tu cuenta esta completa revisa nuestro menu</string>
+    <string name="title_txt_congrats">Felicidades</string>
 </resources>
