@@ -6,7 +6,7 @@
     <dimen name="sp_16">16sp</dimen>
     <dimen name="subtitle_size">20sp</dimen>
     <dimen name="hint_input_layout_size">16sp</dimen>
-    <dimen name="regular_text_size" />
+    <dimen name="regular_text_size">14sp</dimen>
     <dimen name="general_elevation">4dp</dimen>
     <dimen name="general_height_button">60dp</dimen>
     <dimen name="title_welcome_size">20sp</dimen>
