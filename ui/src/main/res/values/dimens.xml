@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="enchinga_btn_radius">16dp</dimen>
+    <dimen name="enchinga_btn_min_height">48dp</dimen>
+    <dimen name="enchinga_btn_vpad">10dp</dimen>
+    <dimen name="enchinga_btn_hpad">16dp</dimen>
+    <dimen name="enchinga_general_elevation">4dp</dimen>
+</resources>

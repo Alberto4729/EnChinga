@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.EnChinga.UI" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="primaryEnChingaButtonStyle">@style/Widget.EnChinga.Button.Primary</item>
+    </style>
+</resources>
