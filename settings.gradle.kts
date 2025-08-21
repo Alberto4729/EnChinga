@@ -21,4 +21,8 @@ dependencyResolutionManagement {
 
 rootProject.name = "AndroidCourse"
 include(":app")
- 
+include(":data")
+include(":domain")
+include(":ui")
+include(":network")
+include(":utils")
