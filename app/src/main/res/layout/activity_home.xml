@@ -4,126 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/home_toolbar"
+    <Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
+    <SearchView
+        android:id="@+id/search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/home_toolbar">
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="@dimen/general_margin"
+        android:layout_marginTop="8dp"
+        />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/principal_container"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+    <include
+        android:id="@+id/card_delivery_status_home"
+        layout="@layout/card_delivery_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/general_margin"
+        app:layout_constraintTop_toBottomOf="@+id/search"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
-            <ImageView
-                android:id="@+id/image"
-                android:layout_width="match_parent"
-                android:layout_height="110dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/pizza"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+    <include
+        android:id="@+id/favorite_restaurant_card"
+        layout="@layout/favorite_restaurant_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:color="@color/bg_color_light"
+        android:layout_marginHorizontal="@dimen/general_margin"
+        app:layout_constraintTop_toBottomOf="@+id/card_delivery_status_home"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
-            <Button
-                android:id="@+id/burron_free"
-                android:layout_width="wrap_content"
-                android:layout_height="35dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:text="@string/fre"
-                android:textSize="10sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageButton
-                android:id="@+id/img_p"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:layout_marginEnd="8dp"
-                android:layout_marginTop="8dp"
-                android:src="@drawable/baseline_bookmark_border_24"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-
-            <TextView
-                android:id="@+id/name_shope"
-                android:layout_width="54dp"
-                android:layout_height="20dp"
-                android:layout_marginHorizontal="@dimen/material_emphasis_disabled_background"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:text="@string/name_shoptxt"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-                android:layout_marginBottom="16dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/image" />
-
-            <ImageView
-                android:id="@+id/linearLayout"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="12dp"
-                android:background="@drawable/ic_star"
-                app:layout_constraintBottom_toBottomOf="@+id/name_shope"
-                app:layout_constraintStart_toEndOf="@+id/name_shope"
-                app:layout_constraintTop_toTopOf="@+id/name_shope" />
-
-            <TextView
-                android:id="@+id/calificacion_star"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:text="@string/num"
-                android:textSize="14sp"
-                app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
-                app:layout_constraintStart_toEndOf="@+id/linearLayout"
-                app:layout_constraintTop_toTopOf="@+id/linearLayout" />
-
-            <ImageView
-                android:id="@+id/accese_timer"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="20dp"
-                android:background="@drawable/acces_time"
-                app:layout_constraintBottom_toBottomOf="@+id/calificacion_star"
-                app:layout_constraintStart_toEndOf="@+id/calificacion_star"
-                app:layout_constraintTop_toTopOf="@+id/calificacion_star" />
-
-            <TextView
-                android:id="@+id/timer_accese"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/hrs_accese"
-                android:textSize="11sp"
-                android:layout_marginStart="4dp"
-                android:textColor="@color/black"
-                app:layout_constraintBottom_toBottomOf="@+id/accese_timer"
-                app:layout_constraintStart_toEndOf="@+id/accese_timer"
-                app:layout_constraintTop_toTopOf="@+id/accese_timer" />
-
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/lo_mastop_home"
+        style="@style/TitleTextStyle"
+        android:layout_width="170dp"
+        android:layout_height="41dp"
+        android:layout_marginHorizontal="@dimen/general_margin"
+        android:layout_marginStart="16dp"
+        android:text="@string/top_of_week"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_marginTop="@dimen/general_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favorite_restaurant_card"
+        tools:layout_editor_absoluteY="482dp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

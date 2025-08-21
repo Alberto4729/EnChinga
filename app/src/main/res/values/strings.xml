@@ -47,4 +47,7 @@
     <string name="primary_button">continuar</string>
     <string name="txt_congrats">Tu cuenta esta completa revisa nuestro menu</string>
     <string name="title_txt_congrats">Felicidades</string>
+    <string name="top_of_week">Lo mas top</string>
+    <string name="card_week">Los mejores lugares</string>
+    <string name="week_card">Tacos al pastor</string>
 </resources>
