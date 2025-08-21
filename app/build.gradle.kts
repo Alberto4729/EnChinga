@@ -1,16 +1,16 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    kotlin("kapt")
 }
 
 android {
     namespace = "com.albertoapps.androidcourse"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.albertoapps.androidcourse"
         minSdk = 24
-        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -26,12 +26,16 @@ android {
             )
         }
     }
+
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
     }
+
     kotlinOptions {
-        jvmTarget = "11"
+        kotlin {
+            jvmToolchain(21)
+        }
     }
 
     buildFeatures {
@@ -47,7 +51,23 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+
+    // Implementing modules
+    implementation(project(":ui"))
+    implementation(project(":domain"))
+    implementation(project(":data"))
+    implementation(project(":network"))
+    implementation(project(":utils"))
+
+    // Dependency injection
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.compiler)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+}
+
+tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinJvmCompile>().configureEach {
+    jvmTargetValidationMode.set(org.jetbrains.kotlin.gradle.dsl.jvm.JvmTargetValidationMode.WARNING)
 }
